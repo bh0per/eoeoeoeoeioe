@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">6
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykład layoutów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 100px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main {
+            flex: 3;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #e4e4e4;
+            padding: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Strona tytułowa</h1>
+</header>
+
+<nav>
+    <a href="#">Strona główna</a>
+    <a href="#">O nas</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="container">
+    <div class="main">
+        <h2>Sekcja Główna</h2>
+        <p>To jest główna sekcja zawartości strony. Tutaj można umieścić tekst, obrazy i inne elementy.</p>
+    </div>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>To jest sidebar, w którym można umieścić dodatkowe informacje, linki lub reklamy.</p>
+    </div>
+</div>
+
+<footer>
+    <p>Stopka © 2023</p>
+</footer>
+
+</body>
+</html>
