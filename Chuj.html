@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z podziałem sekcji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">15%</div>
+        <div class="center">60%</div>
+        <div class="right">25%</div>
+    </div>
+</body>
+</html>
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 400px; /* Minimalna wysokość kontenera */
+    padding: 2%; /* Padding kontenera */
+}
+
+.left, .center, .right {
+    padding: 20px;
+    min-height: 100px; /* Minimalna wysokość dla każdej sekcji */
+}
+
+.left {
+    flex: 0 0 15%; /* 15% szerokości */
+    background-color: #f2f2f2;
+}
+
+.center {
+    flex: 0 0 60%; /* 60% szerokości */
+    background-color: #e0e0e0;
+}
+
+.right {
+    flex: 0 0 25%; /* 25% szerokości */
+    background-color: #ccc;
+}
