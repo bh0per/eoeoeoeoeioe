@@ -45,7 +45,7 @@ body {
 .container {
     display: flex;
     min-height: 400px; /* Minimalna wysokość kontenera */
-    padding: 2%; /* Padding kontenera */
+
 }
 
 .left, .center, .right {
